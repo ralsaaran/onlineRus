@@ -1,0 +1,184 @@
+body{
+	font-family: 'Lora', serif;
+}
+
+.headee{
+	background-color: #000;
+	color: #fff;
+}
+
+ul li {
+    list-style-type: none;
+    padding: 55px;
+    display: inline;
+}
+
+.skill{
+    display: inline;
+}
+		
+.names{
+	color: #fff;
+	margin-top: 15px;
+	font-size: 33px;
+	margin-left: 22px;
+    padding-top: 20px;
+}
+
+.stud{
+    text-align: left;
+	font-size: 16px;
+    margin-left: 20px;
+}
+
+.workExp{
+	background-color: rgba(153, 153, 153, 0.32);
+}
+
+.contentSection{
+	margin-left: 30px;
+    padding-bottom: 10px;
+}
+
+.maintitel{
+	color: #1f1d1d;
+	font-size: 30px;
+}
+
+.titels{
+	font-size: 16px;
+	color: #286090;
+    text-decoration-line: none;
+}
+
+.subtitel{
+	color: rgba(241, 240, 240, 0.87);
+}
+
+.date-text {
+  font-style: italic;
+  font-size: 14px;
+  color: #4a4a4a;
+  line-height: 16px;
+  float: left;
+}
+
+.location-text {
+  font-style: italic;
+  font-size: 15px;
+  color: gray;
+  float: right;
+
+}
+
+.clear-fix {
+  overflow: auto;
+}
+
+.education-entry,
+.work-entry,
+.project-entry {
+  padding: 0 5%;
+}
+
+#skills-h3 {
+  color: rgba(241, 240, 240, 0.87);
+  display: none;
+}
+
+
+.head-text {
+  font-size: 17px;
+  color: #888888;
+}
+
+.white-text {
+  font-weight: bold;
+  color: #fff;
+}
+
+
+.flex-box {
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 10px;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  padding: 10px;
+}
+
+.center-content {
+  padding: 2.5% 5%;
+}
+
+.biopic {
+  float: left;
+  padding: 10px;
+  width: 200px;
+  display: none;
+}
+
+img {
+  margin: 10px;
+}
+
+.space {
+  margin: 10px;
+}
+
+
+#lets-connect {
+  text-align: center;
+}
+
+/* Media queries to handle various device widths */
+
+@media only screen and (max-width: 1024px) {
+  #lets-connect {
+    margin-top: 5%;
+  }
+}
+
+@media only screen and (max-width:900px) {
+  .biopic {
+    width: 175px;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  #lets-connect {
+    margin-top: 10%;
+  }
+  .biopic {
+    width: 150px;
+  }
+  .welcome-message {
+    display: none;
+  }
+}
+
+#map {
+  display: block;
+  height: 100%;
+  margin: 0 5%;
+}
+
+#mapDiv {
+  height: 400px;
+  width: 100%;
+  padding-bottom: 5%;
+}
+
+@media only screen and (min-width: 750px) {
+  #skills-h3,
+  .biopic {
+    display: block;
+  }
+}
