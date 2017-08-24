@@ -136,3 +136,35 @@ var projects = {
     }
 };
 projects.display();
+
+$(document).click(function(loc) {
+ 	var x = loc.pageX;
+ 	var y = loc.pageY;
+
+ 	logClicks(x,y);
+});
+
+
+
+function locationizer(work_obj) {
+    var myLocations = [];
+    for (var i in work_obj.jobs) {
+        var loc = work_obj.jobs[i].location;
+        myLocations.push(loc);
+    }
+    return myLocations;
+}
+
+
+function inName() {
+	var oldName = bio.name;
+    var finalName = oldName;
+    array = oldName.split(' ');
+    finalName = array[0][0].toUpperCase() + array[0].slice(1).toLowerCase() + ' ' + array[1].toUpperCase()
+        return finalName;
+};
+
+
+$("#main").append(internationalizeButton);
+
+$("#mapDiv").append(googleMap);
