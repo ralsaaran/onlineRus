@@ -44,15 +44,13 @@ var bio = {
 bio.display();
 
 var work ={
-      jobs:[
-         {
-              employer: "Rqmnh" ,
-              title: "Training" ,
-              location: "Khalid Ibn Al Walid Street" ,
-              dates: "2017-2018",
-              description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus maximus rhoncus nisl molestie ullamcorper. Nulla quis convallis dui. Proin sollicitudin erat massa."
-          }
-      ],
+      jobs:[{
+          employer: "Rqmnh" ,
+          title: "Training" ,
+          location: "Khalid Ibn Al Walid Street" ,
+          dates: "2017-2018",
+          description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus maximus rhoncus nisl molestie ullamcorper. Nulla quis convallis dui. Proin sollicitudin erat massa."
+          }],
        display:function(){
            $("#workExperience").append(HTMLworkStart);
            for (var x= 0; x<work.jobs.length; x++) {
@@ -72,24 +70,20 @@ var work ={
 work.display();
 
 var education={
-          schools: [
-                  {
+          schools: [{
                 name: "Imam univarsity",
                 location: "Uthman Ibn Affan Road",
                 degree: "BA",
                 majors: ["CS"],
                 dates: "2013-2018",
                 url: "https://imamu.edu.sa/Pages/default.aspx"
-                  }
-          ],
-          onlineCourses:[
-                  {
+                  }],
+          onlineCourses:[{
                 title: "Java",
                 school:"Rwaq",
                 dates: "2015-2016",
                 url: "https://www.rwaq.org/"
-                  }
-          ],
+                  }],
         display:function(){
                 $("#education").append(HTMLschoolStart);
                 for (var x=0; x<education.schools.length; x++) {
@@ -122,14 +116,12 @@ var education={
 education.display();
 
 var projects = {
-        projects:[
-                {
+        projects:[{
                 title: "portfolio projects ", 
                 dates: "2017",
                 description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus maximus rhoncus nisl molestie ullamcorper. Nulla quis convallis dui. Proin sollicitudin erat massa.",
                 images: ["image/photo3.png","image/photo22.png"]
-                }
-        ],
+        }],
         display:function(){
                 $("#projects").append(HTMLprojectStart);
                 for (var x= 0; x<projects.projects.length; x++) {
